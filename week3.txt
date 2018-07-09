@@ -1,0 +1,59 @@
+Week 3 5/14/18 - 5/18/18
+	Monday 5/14/18 ~ 4 Hours
+		Talked with Ben about our goals for the week
+			Since my test chat-bots already have a way of changing conversation, 
+				we wanted to get another API for creating sentences so that conversation feels natural (as if a robot was not doing it)
+			Are goal for the entire project is to be able to have our co-workers train the chat-bot so that they
+				can pick a topic themselves and talk about it
+		Unsuccessfully attempted to find an API that would handle generating sentences that would feel natural
+			Most API's online that are for natural language processing create fake text with no general or constant topic
+				This is unappealing since we want our chatbot to talk about a topic that we give it
+		Started writing my own sentence generator that may or not be used in the final product
+			Started with greetings and re-greetings (once a user has been welcomed into the system,
+				they are no longer greeted; instead they are 'remembered' and asked if they need help
+	Tuesday 5/15/18 ~ 2 Hours
+		I was extremely busy today with my normal work duties, so I didn't spend a long time working on the chat-bot
+		Ben wanted me to continue searching for a natural sentence generator
+			Still came up with nothing that would fulfill our needs
+				However I learned about the basic components of NLP (natural language processing)
+					How machines 'learn' and 'think' via experience aka training
+	Wednesday 5/16/18 ~ 5 Hours
+		Once I discussed my difficulties finding an API that would handle natural language procesing with Ben,
+			he guided me into the direction of natural language generation (NLG)
+			NLP is essentially a component of AI which takes a user input and determining what they are talking about
+			NLG is essentially a component of AI which creates a response to the user based on the user input and/or data
+		Found a couple of API's that could potentially work for our purposes
+			SimpleNLG/SimplerNLG
+			Wordsmith
+			Both were API's for Ruby
+		Wordsmith had little-to-no documentation and I couldn't figure out how to sign up or log in to the system
+		SimpleNLG had some documentation and had a plethora of examples
+	Thursday 5/17/18 ~ 4 Hours
+		Continued researching SimpleNLG, its examples and usage
+			Had to perform research for some linguistics terminology and definitions. Used google and youtube
+				The difference between being the subject of a sentence and the object of a sentence
+					The subject is the person/thing that is doing something
+					The object is having something done to it
+				What is a subject complement
+					Follows a linking verb and modifies or refers to the subject
+						An action verb is a verb that describes an action
+						A linking verb is a verb that connects the subject of the sentence to information about that subject
+				Including passive voice, progressive form and perfect tense
+					Perfect tense are verb tenses which show action already completed
+					Passive voice is used to show interest in the object of the sentence rather than the subject of the sentence
+					Progressive form shows that an action is still in progress
+						Verbs can be in present, past or future progressive
+				Who vs Whom
+					Who is the subject ofa a verb (the one doing the action)
+					Whom is the object of a verb (the one being acted upon)
+		I was given permission to use SimpleNLG for our NLG purposes
+	Friday 5/18/18 ~ 8 Hours
+		After attempting to add a ruby gem for SimpleNLG, I realized that my virtual machine still did not have enough disk space
+		Successfully increased the VM size
+			Unfortunately, this was the easy part. Trying to change the VM partition size was another story
+				Tried to mount an ISO for Gparted - a GUI tool to change the disk partition of a linux OS
+					My VM's GUI is still messed up - even though I can SSH into the VM
+				Finally I found a non-GUI tool, Parted, which allowed me to change the partition size via commmand line
+		Finally I have enough space on my VM to update files, which means i can add the ruby gem for SimpleNLG
+			However, our network was down at the end of the day so I wasn't able to perform 'bundle install'
+				which would install my new ruby gem

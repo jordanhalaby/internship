@@ -1,0 +1,154 @@
+Employment History Form
+	What do i put if there is an employment gap?
+		State that you were unemployed during that time period
+	How many years must i enter?
+		You must list between 7 to 10 years of employment
+	What should I do if i am unemployed for part of this time period?
+		State that you were unemployed during that time period
+	I was unemployed for part of that time
+		State that you were unemployed during that time period
+Scan of Diploma
+	I am from India
+		You must provide final year marksheet and degree copy
+	I am from the united states
+	What do i put if i am from India?
+		You must provide final year marksheet and degree copy
+	What do i put if i am not from India?
+		You must provide a copy of your degree
+	What do i put if i live in the united states?
+		You must provide a copy of your degree
+	What do i upload?
+		You must provide a copy of your degree
+I9 Supporting Documents
+	What can I upload?
+		The front and back of a document such as your drivers license, social security cardd, or birth certificate
+	Do I have to upload a supporting document?
+		It is required for the I9 Form that you upload a supporting document
+	Which side do i have to upload?
+		You should upload both the front and back of the document
+I9 Authorized Representative Form
+	Who can fill in the I9 Authorized Representative form?
+		This can be filled out by any person, related or not, that is over 18 years of age, has a valid email, and is not yourself.
+	Does the representative need a valid e-mail?
+		This can be filled out by any person, related or not, that is over 18 years of age, has a valid email, and is not yourself.
+	How old does the representative have to be?
+		This can be filled out by any person, related or not, that is over 18 years of age, has a valid email, and is not yourself.
+	Does it have to be someone unrelated?
+		This can be filled out by any person, related or not, that is over 18 years of age, has a valid email, and is not yourself.
+	Can the representative be related to me?
+		This can be filled out by any person, related or not, that is over 18 years of age, has a valid email, and is not yourself.
+	Can I use myself?
+		This can be filled out by any person, related or not, that is over 18 years of age, has a valid email, and is not yourself.
+Direct Deposit Documentation
+	Can I provide a written letter?
+		For direct deposit documentation, you need to provide a typed letter
+	Do I have to provide a typed letter?
+		For direct deposit documentation, you need to provide a typed letter
+	Why do i need to provide a typed letter?
+		You must provide a typed letter so that you don't get linked to the wrong bank account
+Fieldglass User Guide
+	What needs to be done for this item?
+		Follow the instructions
+Withholdings Form
+	Why is this form in my queue?
+		You are getting this form because you either work or live in this state
+E-Verify Self Check Instructions
+	Why does this need to be done?
+		Per company policy, checks to see if the individual is eligible to work in the United States
+	What should I upload?
+		A picture of the green checkmark that confirms work authorization
+Self Check Results
+	How do I know if I'm eligible?
+		You can determine if you are eligble by completing the E-Verify Self Check
+	What am I supposed to upload?
+		A picture of the green checkmark that confirms work authorization
+	What do I put here?
+		A picture of the green checkmark that confirms work authorization
+Electronic Fund Transfer Authorization
+	When should i click "Cancel EFT"?
+		You should click this when you want a paper check for payment
+	Why would i pick "Cancel EFT"?
+		You should click this when you want a paper check for payment
+	How do i get direct deposit?
+		You can get direct deposit by clicking the "New EFT Account" button
+Certificate of Insurance
+	Who should be the certicate holder?
+		The certicate holder is Commoneo and please supply our address
+	Why do i need to upload this?
+		As an IC you must carry insurance required by the client
+Business Director Listing
+	What can i upload?
+		You can upload any profile that shows that you represent yourself with
+	What if I don't advertise in the Yellowpages?
+		You can upload from, for example, Facebook, LinkedIn, etc.
+	What if I don't advertise?
+		You can upload from, for example, Facebook, LinkedIn, etc.
+	What am i supposed to upload?
+		You can upload any profile that shows that you represent yourself with
+	Why do i need to upload this?
+		The customer list helps to substantiate your validity as an IC in the case of an IRS audit
+Customer List
+	Why do i need to fill this out?
+		The customer list helps to substantiate your validity as an IC in the case of an IRS audit
+	Why do you need this?
+		The customer list helps to substantiate your validity as an IC in the case of an IRS audit
+	What am i supposed to put here?
+		You must supply a list of your customers
+	What is the purpose of this?
+		The customer list helps to substantiate your validity as an IC in the case of an IRS audit
+Equipment List
+	Why do you need this?
+		Helps differentiate your status as an independent contractor as opposed to a W2
+	Why do i need to fill this out?
+		Helps differentiate your status as an independent contractor as opposed to a W2
+	What do I put here?
+		Listing of any equipment that you bring with you on-site during a project
+	What am i supposed to put here?
+		Listing of any equipment that you bring with you on-site during a project
+	What if i don't have any equipment?
+		Do you bring anything with you on-site? If so, list the items here
+	What equipment should i put here?
+		Listing of any equipment that you bring with you on-site during a project
+	I don't have any equipment
+		Do you bring anything with you on-site? If so, list the items here
+JPMC EJC Appplication Instructions
+	What is the code?
+		The code is: JPMCCW ( colored in red )
+	How do i get the completed application?
+		Go to applicationstation.com, use your previous username and paasword
+	How do I log back in?
+		Go to applicationstation.com, use your previous username and paasword
+	What do i do here?
+		Follow the instructions on the JPMC EJC Application Instructions
+Hourly Consultant Benefits Waiver
+	What am i waiving?
+		Any benefits that you are eligible for come from VSG and not from the client
+	What benefits am i waiving?
+		Any benefits that you are eligible for come from VSG and not from the client
+	What am i eligble for?
+		Any benefits that you are eligible for come from VSG and not from the client
+Employment Application
+	What if i do not have that information?
+		Input "N/A" for those fields
+Sick Leave Notice
+	How do i know if i get sick leave benefits?
+		Scroll through this item and if your location is on it, you get benefits
+I9 Form
+	Why can't i fill out the second page?
+		The employer will fill out the second page
+ACA Benefits Election
+	What does accepting coverage mean?
+		Accepting coverage doesn't necessarily mean you are enrolled
+	What does waiving coverage mean?
+		Waiving coverage means that will not be enrolled in ACA benefits
+General
+	How to save a signature
+	How to view a pdf
+	How to print a pdf
+	What browser should i use
+	How do i upload the document?
+Problems
+	Form won't close
+	Form won't open
+	Locked out of account
+	Field is still red after input

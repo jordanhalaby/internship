@@ -1,0 +1,114 @@
+Heidi - Background and Drug Screen
+	Employment History Form
+		Must give present date
+		Full 7 or 10 years	
+			If doesn't fill, must say that they were unemployed for that time period
+		No employment gaps
+			If so, must ask if they are unemployed or provide employment verification
+	Scan of Diploma
+		If from India, must provide final year marksheet and degree copy
+Jessica
+	I9 Supporting Documents
+		Upload front and back
+			"Examples include: " Drivers license, SS card, birth certification
+				Cannot directly force them to upload any of these
+	I9 Authorized Representative Information
+		Agent/Rep Information section
+			Fill in valid e-mail 
+			Over 18 years old
+			Does it have to be someone unrelated?
+				No, it can be a family member as well
+	Direct Deposit Documentation
+		Must be a typed letter from the bank
+			If written, possibility for linking to wrong bank account
+	How to sign/save signature
+	New Hire Orientation Checklist (Hallmark)
+		Viewing/Printing PDF
+	FieldGlass User Guide
+		Follow instructions
+	Usage of Internet Explorer instead of Chrome/FireFox ***
+		Should be first thing to ask
+	Withholdings Forms
+		May work in one state and live in a different
+Candace - Independent Contractors
+	E-Verify Self Check Instructions
+		Why does it need to be done
+			Per company policy, checks to see if the individual is eligible to work in the United States
+		What do i upload
+			A picture of the green checkmark
+				Says that work autorization is confirmed
+	Self Check Results
+		What do i put in here (from E-Verify Self Check Instructions)
+			A picture of the green checkmark
+				Says that work autorization is confirmed
+	Electronic Fund Transefer Authorization
+		Users think that Cancel EFT means they want a paper checkmark
+			Instead it means that they already have it set up
+			By clicking "Cancel EFT", this would mean that you want Pop up and say do you want a paper check mailed to you, (confirm)
+		Say: "If you are interested in receiving direct deposit, please click "New EFT Account"
+	Certificate of Insurance
+		Who should be certicate holder be?
+			Should be Commoneo and our address
+	Business Directory Listing
+		Users say that they don't advertise in YellowPages
+			Say that they can use facebook, linkedin, etc
+	Certificate of Good Standing
+		What is a certicate of good standing?
+			Google this question and use it as a response
+	Customer List
+		Why do you need this?
+			the customer list helps to substantiate your validity as an IC in the case of an IRS audit
+	Equipment List
+		Why do you need this?
+			helps differentiate your status as an independent contractor as opposed to a W2
+		What do you need here?
+			listing of any equipment that you bring with you on-site during a project
+		I don't have any equipment?
+			Do you bring anything with you on-site?
+	Proof of Workers' Compensation Insurance
+		I don't have workers comp 
+			do you have any other workers employed
+				If so, drop into Candace
+				If not, Candace will skip this item and add affidavit
+Lynette - W2 Onboardings
+	HPE Assignment Checklist
+		Has the contractor been an HP/HPE employee within the past 12 months?
+			Only applies if they were a W2
+		Has the contractor previously worked at HP/HPE as a contractor
+			Only applies if they were an IC
+	Draw attention to different fields??
+	JPMC EJC Application Instructions	
+		"What is the code"
+			JPMCCW (Highlighted in Red)
+		"How do i get the completed application"
+			go to applicationstation.com, use your previous username and paasword
+			to access your completed application
+		"how do i log back in"
+			go to applicationstation.com, use your previous username and paasword
+Brittani
+	I9 Authorized Representative Information
+		People commonly ask if they can use themselves, or same email address - the wording is weird
+			Not allowed to use yourself
+	Hourly Consultant Benefits Waiver
+		What am I waiving
+			Any benefits that you are eligible for come from VSG and not from the client
+	Employment Application
+		Why won't it let me save
+			Please check over the form that everything is green (validated)
+		If you don't have that information, input "N/A"
+	JPMC EJC Completed Application
+		What do I do here
+			Follow the instructions on the JPMC EJC Application Instructions
+	Sick Leave Notice
+		Do i get sick leave benefits?
+			Scroll down and find their state
+	I9 Form
+		Why can't i fill out the second page
+			The bottom of the first page tells you to stop as the employer fills that out
+	ACA Benefits Election
+		Accepting coverage doesn't necessarily mean you are enrolled
+		Easier to accept coverage originally and waive later instead of waiving first
+	Locked out of account
+		Reset password on the home page
+	* People don't like to read the instructions for things
+	* If chatbot doesnt succeed, give the general HR number 248-841-8935

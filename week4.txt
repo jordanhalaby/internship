@@ -1,0 +1,68 @@
+Week 4 5/21/18 - 5/25/18
+	Monday 5/21/18 ~ 4 Hours
+		Continuing from week 3
+		After attempting to add a ruby gem for SimpleNLG, I realized that my virtual machine still did not have enough disk space
+		Successfully increased the VM size
+			Unfortunately, this was the easy part. Trying to change the VM partition size was another story
+				Tried to mount an ISO for Gparted - a GUI tool to change the disk partition of a linux OS
+					My VM's GUI is still messed up - even though I can SSH into the VM
+				Finally I found a non-GUI tool, Parted, which allowed me to change the partition size via commmand line
+		Finally I have enough space on my VM to update files, which means i can add the ruby gem for SimpleNLG
+			I tried adding SimpleNLG to my gemfile in order to perform bundle install and thereafter bundle exec tux
+				SimpleNLG was written in JRuby instead of Ruby, so I am not able to use it
+		Spent the majority of the rest of the day trying to find a different NLG API that Ruby would support
+	Tuesday 5/22/18 ~ 6 Hours
+		Talked to Ben about possibile other API's that could be used
+		He suggested that we can still use SimpleNLG with JRuby
+			I would have to create a new project written in a combination of Ruby, JRuby and Java
+			I installed the newest version of JRuby to a different part of my VM
+				Downloaded SimpleNLG and Wit to my VM
+			Wrote a script that includes both SimpleNLG and Wit to my Ruby files
+			Used jirb to test my code as I was testing things
+				Went through all the examples of SimpleNLG
+					Copied them to a ruby file for testing
+				Converted my original test chat-bot script to be supported by JRuby and jirb command line
+	Wednesday 5/23/18 ~ 5 Hours
+		Added a few lines from SimpleNLG to my test chat-bot so that a sentence is generated based on certain conditions
+			Used modifiers to change the sentence to have an additional clause
+				Modifiers can be adjectives, adjective clauses, adverbs, adverb clauses	
+					absolute phrases, participle phrases, and prepositional phrases
+		Decided to use 'bundle console' instead of jirb for as my testing console
+			bundle console opens a jirb session with the bundle pre-loaded
+				requires 'bundle install'
+			bundle install installs the dependencies specified in the Gemfile
+		Watched a couple of videos whose subject was JRuby
+			JRuby: The Power of Java and Ruby
+				Comparison of Java and Ruby
+					Ruby code was much simpler and more concise
+					Different kinds of behavior and abstraction
+					Ruby is much more malleable then Java
+				An introduction to JRuby
+					Implementation of the Ruby language
+						Slight differences
+					Open source
+				How to call Ruby from java and JIRB
+					Interaction with Java and Ruby 
+				Issues with Ruby comapred to JRuby
+					Threading, Unicode, Performance, Memory management
+				Implementation
+					Lexing/parsing, core classes, interpreter, compilation
+	Thursday 5/24/18
+		Added a method to my test chat-bot that takes the user input and appends to a text file
+			It will help to train the chat-bot by 
+				"Saving" a phrase to be added to Wit
+				"Update" a phrase to be modified in Wit
+				"Remove" a phrase to be removed from Wit
+		Tried to automatically include my base ruby script for use in the console
+			Used a rakefile to require ruby files that are necessary for my application
+				Added the following to my Rakefile
+					task :console do
+						require 'irb'
+						require 'irb/completion'
+						require './start.rb'
+						ARGV.clear
+						IRB.start
+					end
+			Now I can run my code with 'rake console' and all my files are automatically loaded in
+		Migrated my test chat bot to an archived file 
+			Now I can use my main file (chat.rb) to run my production chatbot

@@ -1,0 +1,58 @@
+Week 9 6/25/18 - 6/29/18
+	Monday 6/25/18
+		After having finishedd talking with the customer serviced representatives in the office last week,
+		I am finally able to start training the Wit API so that it responds correctly to various input
+		from the user
+			I started going through all of the problems that I was provided with and started sorting them
+				according to what kinds of questions that they provoke
+				according to what specific form that these questions correspond to
+				according to general problems that users face when using our system
+			While writing out these questions, i realized that it is possible that the user will make statements instead of asking questions
+				This meant that i would have to accomodate for these statments as best i can
+		When i begin training the Wit API, I will have to use these questions and any other questions related to it
+			For that reason, I am going to approach this task with great precison so as to avoid training the API falsely
+			Also, I will have to be very repetitive with training Wit so that it understands as many ways as possible that 
+				a question may be asked
+		After i finish that, I will begin to formulate the answers to these questions and see if there are any similarities
+			between these answers so tha the neural network has to perform less work
+		At the end of the day, i had compiled a list of questions and their corresponding forms
+	Tuesday 6/26/18
+		I started going through the list of questions that pertain to their corresonding forms
+			I formulated answers that not only answer the question, but also "use the question to answer the question"
+			After formulating all of the answers, I grouped them according to similarities between other questions
+				This will make it easier to create SimpleNLG sentences based off the incoming user input
+			The most difficult part about this process was creating responses that not only answered the question,
+			but also could be reused for other questions
+		Tomorrow, i will begin to convert all of these sentences into SimpleNLG output
+	Wednesday 6/27/18
+		From the list of responses that I compiled yesterday, I began going through each one, one-by-one 
+			I converted each of the responses to a SimpleNLG format 
+				Had to figure out the subject, verb, and object of each responses
+					Some of these required modifiers to the statements
+			This took an extremely long time due to the nature of the task
+				A lot of responses
+				Having to re-learn several things about the SimpleNLG software
+				Testing
+			Instead of using the console to test, i use interactive ruby (IRB) with putty and copied and pasted each 
+				SimpleNLG script into it so that i could test each one on the fly
+	Thursday 6/28/18
+		Spent a good majority of the day taking the questions given to me by our customer service representatives 
+		and training Wit with them
+			This took a long time for several reasons
+				The list of my compiled questions was very long
+				I had to take each question that i recorded and train Wit on it
+					Then i had to take all questions (to the extent of my creativity) and devise different ways to phrase it
+				Each of the questions required a subset of the following
+					A new intent
+					A new trait
+					A new keyword
+					At the end of my training, I had about 30 intents that were all devised to describe a users question
+				I had to think creatively to address each question in its entirity
+	Friday 6/29/18
+		Now that I've trained Wit on statements and questions, the next step is to train it on common problems	
+			These include items not opening, fields not validating, and other problems
+			Similarly to training the Wit API with questions, this was a long process
+				I had to essentially go through all of the potential problems that a user may encounter
+		After training the Wit API on both questions, statements, and potential problems, I think i am ready
+			to start converting intents into codes that can be used to train a neural network
+			The neural network will be converted from Java to Ruby next week

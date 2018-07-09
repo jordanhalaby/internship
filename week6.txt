@@ -1,0 +1,58 @@
+Week 6 6/4/18 - 6/8/18
+	Monday 6/4/18 ~ 3 Hours
+		Starting from where I left off last week with responses that are based on
+			which form and/or field that is having problems, I began to integrate the SimpleNLG API into 
+			my new chat-bot application (PRYDE) so that responses are formulated in a way so
+			that they semi-natural
+		Implemented a new greetings feature so that sampling from multiple arrays forms a new
+			sentence that will not be consistently the same, aka it's method output varies
+			Also implemented a re-greeting method that will 'remember' that the user has already
+				been welcomed to the system
+		Finally, i copied over the code from my test chat-bot that will either save, remove, or update
+			how a phrase should be processed instead of what Wit processed it as
+				This will require a database integration and will allow for us as a company to train it
+	Tuesday 6/5/18 ~ 4 Hours
+		Today our company changed our office location to an area that was more spacious
+			This was because ouir company is growing rapidly and our old office didn't have enough space/resources
+			Upon booting up our computers, we realized that our internet was not working the way it was supposed to
+				Among others, i was unable to connect to the VPN and therefore was unable to continue developing the chat-bot for the day
+		So, in order to actually acomplish something with my chat-bot, i began to further research NoSQL, SQL, their similarities and differences
+			Having taken both database principles and Big Data, I was very familiar and comfortable with SQL
+			NoSQL on the other hand is foreign to me, so I researched about
+				Collections, documents
+				Insert, update, find, count, aggregate, and remove operations
+			Essium uses MongoDB as their database utility, so learning NoSQL and SQL is of paramount importance
+	Wednesday 6/6/18 ~ 4 Hours
+		When Joel brought it to my attention that i could lose all of the progress that I have made on the
+			chat-bot if something were to happen to my laptop
+			Therefore, he suggested that I upload all of my code to github regularly so that this problem will be nonexistent
+			So today I started to learn Github as I have no prior knowledge of it
+				I learned about:
+					git init
+					git add (for one or several files)
+					git commit
+					git remmote add origin 
+					git push -u origin master
+				I had to create an SSH key and add it to Github in order for pushing to work
+		Talked to Ben about future implementation goals
+			I want to integrate my chat-bot with MongoDB so that I can train the chat-bot
+				My thinking is to go to each person in the office and ask what kinds of problems that users run into
+			I also want to give the chat-bot a GUI so that I can start grabbing information such as user's name
+				the current form that they are in, and fields that have yet to be completed
+	Thursday 6/7/18 ~ 4 Hours
+		Cleaned up some of my code so that it conforms to our current code standards
+		Added comments to my existing code
+			I wanted to make sure that whoever looks at my code will be able to understand what is going on with Wit
+				and simpleNLG.
+			This will be done consistently from now on
+		Edited the logic used to save, update, or remove user input to the Wit API
+			I made a method that will use database implementation so that the process of doing so will be easier and more efficient
+	Friday 6/8/18 ~ 5 Hours
+		Continued working on my flowchart by brainstorming possible questions that might be asked to the chat-bot
+			Examples
+				What documents are required for the I9 Form
+				How does a user store their signature for later use
+				Why are fields red
+			Some of these questions could also be construed as problems, so there will be overlap
+		Came up with a way to handle mapping user input to output
+			I'm going to use a neural network so that i can classify user input as different responses

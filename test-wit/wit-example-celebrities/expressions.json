@@ -1,0 +1,35 @@
+{
+  "data" : [
+    {
+      "text" : "hello",
+      "entities" : [
+        {
+          "entity" : "greetings",
+          "value" : "\"true\""
+        }
+      ]
+    },
+    {
+      "text" : "what does elon musk do?",
+      "entities" : [
+        {
+          "entity" : "notable_person",
+          "value" : "{:name \"Elon Musk\", :external {:wikidata \"Q317521\", :wikipedia \"Elon Musk\"}}",
+          "start" : 10,
+          "end" : 19
+        }
+      ]
+    },
+    {
+      "text" : "who is meghan markle?",
+      "entities" : [
+        {
+          "entity" : "notable_person",
+          "value" : "{:name \"Meghan Markle\", :external {:wikidata \"Q3304418\", :wikipedia \"Meghan Markle\"}}",
+          "start" : 7,
+          "end" : 20
+        }
+      ]
+    }
+  ]
+}

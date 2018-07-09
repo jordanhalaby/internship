@@ -1,0 +1,70 @@
+Week 7 6/11/18 - 6/15/18
+	Monday 6/11/18 ~ 4 Hours
+		I told Ben about my proposal to make a neural network so that we can train the chat-bot to process the user input and
+			pass it through the algorithm to produce a key code that will correspond to an appropriate response to the user's problem
+			He agreed that it was a good idea so i started brainstorming possible design techniques
+		At the beginnning of the day, Ben sent me a academic article about neural networks and their role in artificial intelligence chat-bots
+			It was titled "A Neural Conversational Model"
+			I will read this later on in the week
+		Me and Josh sat down and started to go through the code necessary for me to connect my application to the database, which is MonngoDB
+			We went through many of the regular config files to no avail
+			I kept trying to do Mongo::Client which kept giving me an unitialized constant error
+			Finally, I was able to connect to Mongo using Mongo::Connection
+	Tuesday 6/12/18 ~ 4 Hours
+		I created a new database on the development server for the purpose of saving user input in order to train the chat-bot
+			Created a new collection called "saves" which will serve as the collection for this task
+		Modified my save method to write to the database instead of appending to a files
+			Simply had to use the NoSQL insert operation to insert the user input into a document
+		Created a brand new method for my debugging purposes that will grab the saved data from the database depending on if I want 
+			to look at the saved input, removed input, or input to update
+		Downloaded Java and Eclipse so that i can begin work on the neural network
+			I will code the neural network in Java, and then translate it to ruby once i'm done
+			I will use random, formulated training data in order to train the network
+	Wednesday 6/13/18 ~ 3 Hours
+		Talked to Heidi about problems that users encounter regarding background checks and drug screens
+			She is the background specialist, and because of this, She can't directly communicate through our system
+			She said that this project will be of great benefit to our workers who are on the phone all day
+			She gave me two forms that are commonly problematic
+				For example
+				Employment History Form
+				Scan of Diploma
+		Made plans to talk with some of the other people in the office on Wednesday of next week
+		Push the code that i've made this week to GitHub
+	Thursday 6/14/18 
+		Started writing a neural nework in Java so that I can practice for writing in in Ruby
+		I obtained this code from Dr. Maniccam's Machine Learning and Data Mining course
+			Variables
+				It has a inner, private class named Record that stores the records from the training file
+				Variables for number of middle hidden nodes, number of iterations, and learning rate
+				Has an ArrayList for each record
+					Not sure how I will solve this with Ruby
+				Arrays for theta values, error values, and weight/matrix values
+			Methods
+				Method for training the Neural Network via a training file that contains inputs and outputs
+				Method for setting the parameters for the Network and randomly assigning values to the theta values and weight/matrix values
+				A method for actually training the network via forward and backward calculations
+					Forward calculations
+						feed inputs into input nodes
+						compute inputs/outputs at hidden/output nodes
+					Backward calculations
+						compute errors at output/hidden nodes
+						update weights matricies for input/hidden nodes and hidden/output nodes
+						update theta values at hidden/output nodes
+				Finally, a method for testing data using forward calculation on data from an input file
+	Friday 6/15/18
+		Started reading through the academic article that Ben had sent me on Monday
+		It's called "A Neural Conversational Model" written by Oriol Vinyals and Quoe V. Learning
+		I read through it multiple times and extracted the following information about their experiment
+			This article is all about creating a conversational model for a chat-bot
+			There are previous approaches to this goal, but they require hand-crafted rules
+			The authors of this article propose an approach for this task that is done using a sequence to sequence framework
+				This modle converses with the user via predicting the next sentence having been given the previous sentences in the conversation
+			They approach this task using a Neural Network with the following motivation:
+				"Advances in end-to-end training of neural networks have led to remarkable progress in many domains such as
+					speech recognition, computer vision, and language processing. Recent work suggests that neural networkss can do more than
+					just mere classification, they cna be used to map complicated structures to other complicated structures"
+			As mentioned earlier, their approach uses the sequence-to-sequence framework
+				Their model uses a recurrent neural network "which reads the input sequnece one token at a time, and predicts
+					the output sequence, also one token at a time"
+				In order to maxim
+		The article goes into more depth about their appproach to conversational modeling, but these notes generalizes it well

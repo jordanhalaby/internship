@@ -1,0 +1,82 @@
+x Employment History Form
+	What do i put if there is an employment gap?
+	How many years must i enter?
+	What should I do if i am unemployed for part of this time period?
+	I was unemployed for part of that time
+x Scan of Diploma
+	I am from India
+	I am from the united states
+	What do i put if i am from India?
+	What do i put if i am not from India?
+	What do i put if i live in the united states?
+	What do i upload?
+x I9 Supporting Documents
+	What can I upload?
+	Do I have to upload a supporting document?
+	Which side do i have to upload?
+x I9 Authorized Representative Form
+	Who can fill in the I9 Authorized Representative form?
+	Does the representative need a valid e-mail?
+	How old does the representative have to be?
+	Does it have to be someone unrelated?
+	Can the representative be related to me
+	Can I use myself?
+x Direct Deposit Documentation
+	Can I provide a written letter?
+	Do I have to provide a typed letter?
+	Why do i need to provide a typed letter?
+x Fieldglass User Guide
+	What needs to be done for this item?
+x Withholdings Form
+	Why is this form in my queue?
+x E-Verify Self Check Instructions
+	Why does this need to be done?
+	What should I upload?
+x Self Check Results
+	How do I know if I'm eligible?
+	What am I supposed to upload?
+	What do I put here?
+x Electronic Fund Transfer Authorization
+	When should i click "Cancel EFT"?
+	Why would i pick "Cancel EFT"?
+	How do i get direct deposit?
+x Certificate of Insurance
+	Who should be the certicate holder?
+	Why do i need to upload this?
+x Business Director Listing
+	What can i upload?
+	What if I don't advertise in the Yellowpages?
+	What if I don't advertise?
+	What am i supposed to upload?
+	Why do i need to upload this?
+x Customer List
+	Why do i need to fill this out?
+	Why do you need this?
+	What am i supposed to put here?
+	What is the purpose of this?
+x Equipment List
+	Why do you need this?
+	Why do i need to fill this out?
+	What do I put here?
+	What am i supposed to put here?
+	What if i don't have any equipment?
+	What equipment should i put here?
+	I don't have any equipment
+x JPMC EJC Appplication Instructions
+	What is the code?
+	How do i get the completed application?
+	How do I log back in?
+	What do i do here?
+x Hourly Consultant Benefits Waiver
+	What am i waiving?
+	What benefits am i waiving?
+	What am i eligble for?
+x Employment Application
+	What if i do not have that information?
+x Sick Leave Notice
+	How do i know if i get sick leave benefits?
+x I9 Form
+	Why can't i fill out the second page?
+x ACA Benefits Election
+	What does accepting coverage mean?
+	What does waiving coverage mean?

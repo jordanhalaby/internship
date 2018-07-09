@@ -1,0 +1,53 @@
+Week 5 5/28/18 - 6/1/18
+	Monday 5/28/18 ~ 0 Hours
+		Memorial Day
+	Tuesday 5/29/18 ~ 6 Hours
+		Created a new project in Wit, called PRYDE, that will serve as the actual chat-bot
+			Created trait entities for questions, field related problems, closure related problems, and form related problems
+				These will be used to determine what kind of issue that the user is having
+				The chat-bot will then decide how to handle the information given and may request more information
+			Created a free-text/keyword entity named 'forms'
+				This will help determine what form that the user is talking about
+					Eventually, we will make the chat-bot figure out which form they are already on automatically
+						Along with their name and other available information
+			Spent a good amount of time training these entities for later usage
+				Training by adding examples to the Wit API to test how the chat-bot will understand a sentence
+	Wednesday 5/30/18 ~ 4 Hours
+		Created a flow chart for figuring out the path of logic that the chat-bot will take
+			Starts with figuring out if they are asking a question or posing a problems
+			If they are posing a problems
+				Figure out what form is the issue
+				Figure out which fields are not complete
+					or which fields are known to give problems to the user
+						pull these fields from the database
+				Figure out the field name
+				Figure out commmon answers for these problem fields
+				Formulate a response
+				Figure out if the response helps the user or not
+					If so, we have achieved our goal
+					If not, loop  back through the flow chart
+						or contact support internally via a database entry
+		Showed Ben my flowchart that I made
+			He agreed with how I want to set up the process flow
+				Notifying support internally will allow us to fix issues that are too complex for the chat-bot to solve
+				We need to be able to train the chat-bot to access known field problems and how to resolve them
+			Gave me insight as to what kinds of questions and/or problems that the user may pose
+			Our plan is to be able to get the problematic form name from their current position
+		Started training fields on specific forms on Wit
+			I focused on fields that can pose a problem from my point of view
+				Such as SSN, birth-date, and signature fields
+	Thursday 5/31/18 ~ 5 Hours
+		Started changing some of the entities that I made on Wit
+			Made it so that the API will look for general problems or questions
+				instead of looking for specific problems
+			Trained these entities so that I can use them once I create the code to handle inputs
+		Put together a simple script as a starting point
+			Recieves user input and determines whether they are posing a problem or asking a question
+			Then it determines what kind of problem they are having: a field problem, 
+				a form closure problem, a form opening problem or other
+			If they are having a field problem, it determines what kind of problem: a locked field, an unvalidated field or other
+	Friday 6/1/18 ~ 3 Hours
+		Continued training Wit
+			This will be an ongoing sub-project as it needs to recognize all input regardless of how it is phrased
+		Created a method stub that will grab the name of the form that the user is on
+			A goal of mine is to be able to grab all empty fields on the form so the chat-bot knows what it is looking for

@@ -1,0 +1,295 @@
+{
+  "data" : [
+    {
+      "text" : "HAHA",
+      "entities" : [
+        {
+          "entity" : "sentiment",
+          "value" : "\"positive\""
+        }
+      ]
+    },
+    {
+      "text" : "Hello",
+      "entities" : [
+        {
+          "entity" : "greetings",
+          "value" : "\"true\""
+        }
+      ]
+    },
+    {
+      "text" : "bad",
+      "entities" : [
+        {
+          "entity" : "sentiment",
+          "value" : "\"negative\""
+        }
+      ]
+    },
+    {
+      "text" : "bad joke"
+    },
+    {
+      "text" : "haha",
+      "entities" : [
+        {
+          "entity" : "sentiment",
+          "value" : "\"positive\""
+        }
+      ]
+    },
+    {
+      "text" : "hello!",
+      "entities" : [
+        {
+          "entity" : "greetings",
+          "value" : "\"true\""
+        }
+      ]
+    },
+    {
+      "text" : "hi",
+      "entities" : [
+        {
+          "entity" : "greetings",
+          "value" : "\"true\""
+        }
+      ]
+    },
+    {
+      "text" : "hilarious",
+      "entities" : [
+        {
+          "entity" : "sentiment",
+          "value" : "\"positive\""
+        }
+      ]
+    },
+    {
+      "text" : "i want to hear a joke about chuck",
+      "entities" : [
+        {
+          "entity" : "getJoke",
+          "value" : "\"true\""
+        },
+        {
+          "entity" : "category",
+          "value" : "\"chuck\"",
+          "start" : 28,
+          "end" : 33
+        }
+      ]
+    },
+    {
+      "text" : "is it cold in San Jose?"
+    },
+    {
+      "text" : "let's hear a joke about chuck norris",
+      "entities" : [
+        {
+          "entity" : "getJoke",
+          "value" : "\"true\""
+        },
+        {
+          "entity" : "category",
+          "value" : "\"chuck\"",
+          "start" : 24,
+          "end" : 36
+        }
+      ]
+    },
+    {
+      "text" : "lol",
+      "entities" : [
+        {
+          "entity" : "sentiment",
+          "value" : "\"positive\""
+        }
+      ]
+    },
+    {
+      "text" : "so funny",
+      "entities" : [
+        {
+          "entity" : "sentiment",
+          "value" : "\"positive\""
+        }
+      ]
+    },
+    {
+      "text" : "tell me a joke",
+      "entities" : [
+        {
+          "entity" : "getJoke",
+          "value" : "\"true\""
+        }
+      ]
+    },
+    {
+      "text" : "tell me a joke about Chuck",
+      "entities" : [
+        {
+          "entity" : "getJoke",
+          "value" : "\"true\""
+        },
+        {
+          "entity" : "category",
+          "value" : "\"chuck\"",
+          "start" : 21,
+          "end" : 26
+        }
+      ]
+    },
+    {
+      "text" : "tell me a joke about chuck!",
+      "entities" : [
+        {
+          "entity" : "getJoke",
+          "value" : "\"true\""
+        },
+        {
+          "entity" : "category",
+          "value" : "\"chuck\"",
+          "start" : 21,
+          "end" : 26
+        }
+      ]
+    },
+    {
+      "text" : "tell me a joke about chuck?",
+      "entities" : [
+        {
+          "entity" : "getJoke",
+          "value" : "\"true\""
+        },
+        {
+          "entity" : "category",
+          "value" : "\"chuck\"",
+          "start" : 21,
+          "end" : 26
+        }
+      ]
+    },
+    {
+      "text" : "tell me a joke about tech",
+      "entities" : [
+        {
+          "entity" : "getJoke",
+          "value" : "\"true\""
+        },
+        {
+          "entity" : "category",
+          "value" : "\"tech\"",
+          "start" : 21,
+          "end" : 25
+        }
+      ]
+    },
+    {
+      "text" : "tell me a joke about technology",
+      "entities" : [
+        {
+          "entity" : "getJoke",
+          "value" : "\"true\""
+        },
+        {
+          "entity" : "category",
+          "value" : "\"tech\"",
+          "start" : 21,
+          "end" : 31
+        }
+      ]
+    },
+    {
+      "text" : "tell me something funny",
+      "entities" : [
+        {
+          "entity" : "getJoke",
+          "value" : "\"true\""
+        }
+      ]
+    },
+    {
+      "text" : "tell me the weather in Chicago"
+    },
+    {
+      "text" : "tell me the weather in Japan"
+    },
+    {
+      "text" : "that's horrible",
+      "entities" : [
+        {
+          "entity" : "sentiment",
+          "value" : "\"negative\""
+        }
+      ]
+    },
+    {
+      "text" : "thats funny",
+      "entities" : [
+        {
+          "entity" : "sentiment",
+          "value" : "\"positive\""
+        }
+      ]
+    },
+    {
+      "text" : "this sucks",
+      "entities" : [
+        {
+          "entity" : "sentiment",
+          "value" : "\"negative\""
+        }
+      ]
+    },
+    {
+      "text" : "weather in seattle"
+    },
+    {
+      "text" : "what no",
+      "entities" : [
+        {
+          "entity" : "sentiment",
+          "value" : "\"negative\""
+        }
+      ]
+    },
+    {
+      "text" : "what's the weather in San Francisco?"
+    },
+    {
+      "text" : "whats the weather"
+    },
+    {
+      "text" : "whats the weather in san francisco"
+    },
+    {
+      "text" : "you suck",
+      "entities" : [
+        {
+          "entity" : "sentiment",
+          "value" : "\"negative\""
+        }
+      ]
+    },
+    {
+      "text" : "you're bad",
+      "entities" : [
+        {
+          "entity" : "sentiment",
+          "value" : "\"negative\""
+        }
+      ]
+    },
+    {
+      "text" : "you're horrible",
+      "entities" : [
+        {
+          "entity" : "sentiment",
+          "value" : "\"negative\""
+        }
+      ]
+    }
+  ]
+}

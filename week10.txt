@@ -1,0 +1,63 @@
+Week 10 7/2/18 - 7/6/18
+	Monday 7/2/18
+		Begam with looking at the existing Java implementation of the neural network
+		so that I can break apart the code and 'divide and conquer' by splitting up tasks and
+		do individual parts first and then tie them in together once finished
+		Starting converting the Neural Network to Rbuy
+			Created a class for all of the code
+			Created an inner class called Record which will be used to store input and output data based off the training data
+				The constructor for this class calls for an array of input data and an array of output data
+			Wrote a method for loading the training data
+				Since there is no scanner object to read the input training file one item at a time, i had to use a file reader that
+					first found the first line in the file and split it up into number of records, number of inputs and number of outputs
+				Then i went through the rest of the file, line-by-line and checked to see if it was equivalent to the first line
+					or if it was an empty string. If these conditions weren't satisfied, i pushed the line onto an array
+				Then i went through each of the lines in this array and created two temporary arrays for inputs and outputs
+					For the inputs, I split each line by an empty space with a limit of the number of inputs as a parameter
+					Then i pushed each of the inputs on to the temporary input array
+					Repeated this process for the outputs and pushed them on to the temporary output array
+				Finally, I created a new Record object with the parameters of the temporary input and temporary output arrays
+					and then i pushed this object onto the array of records
+	Tuesday 7/3/18
+			Typed up the class variables such as number of iterations, thetaMiddle, errorOut, and others in the constructor method
+			When running the code in the IRB (interactive ruby) console, all instance variables and their values were being returned
+				This is befcuase the default "inspect" on objects in Ruby is to print out all of the instance variables
+					"inspect" is predefined for all objects in Ruby
+				In order to get rid of this problem, I had to define my own "inspect" method
+					Overriding them with my own code changed the behavior
+					At the end of my method, i returned self so that the console will always return the instance of the Neural Network object
+			Started working on the setParameters method which will initialize all variables that are necessary for the Network to working
+				Created a Random number generator that takes a given seed as its argument
+				Randomly generated initial values for thetaMiddle, thetaOut, matrixMiddle, and matrixOut arrays
+			Wrote the code for the forward passing during training the neural network
+				I was given an array of inputs obtained from the array of records
+				I took this array and calculated the total sum of these inputs and the matrixMiddle two-dimensional array
+					In order to do this, i needed to convert the input number and the matrixMiddle number to a float so they could be added to the sum
+					After obtaining the total sum, i calculated the middle array elements using a formula containing the exponential of a number
+						I for e^x, i needed to use the Math library
+				Then i proceeded to do the same process for the output array elements using the same mathematical function
+	Thursday 7/5/18
+			Wrote the code for the backwards pass that updates
+				the error arrays
+				the weight arrays
+				the theta arrays
+			Finally, I wrote the code for testing the neural network on a set of test data
+				In order to do this, I had to utilize the same strategy that I used while loading the training data
+					so that I can obtain the test data
+				Then on each of the test records, i had to apply the forward calculation algorithm on the test input
+			During this whole process, i had to be careful to use the @ symbol when using class variables
+			Also, i had to be careful with Java's ArrayLists since Ruby doesn't provide that data type
+	Friday 7/6/18
+		After completing the transition of migrating the Java neural network algorithm to Ruby,
+			I realized that the nature of my algorithm will not classify data as accurately as I need to
+			There is a lot of entropy with the returned values of the network
+			If I were to use codes to represent different components of the user input and specific responses,
+				I would have a tremendously difficult time trying to keep them distinct
+				That is, it would be hard for the computer to differentiate between one code and another
+		So, instead of using a neural network to do the required classification of user input I decided to use a decision tree
+			This way, I can build a tree based off of my training data and classify each test record by traversing the tree
+				The user data and training data will be formatted perfectly for the usage of a decision tree
+			There are several benefits of using the decision tree for classification of these records
+				The actual classification of a record is very fast
+				We don't need to choose parameters that are usually used for optimizing a given data mining algorithm
+				We can formulate rules based on the tree

@@ -1,0 +1,29 @@
+Week 1 4/30/18 - 5/4/18
+	Monday 4/30/18 ~ 2 hours
+		Was given a high level explanation of the project from Ben
+			Talked about goals of the project
+			His first thoughts about it
+			The API that can be used to measure intents
+		Opened up a virtual machine on my virtual box
+			Cleaned up space on my virtual machine
+	Tuesday 5/1/18 ~ 5 hours
+		Researched Wit extensively as an API
+			Learned about intents, entities, and training
+		Researched basic Ruby programming syntax
+			Compared its syntax with that of Lyon
+	Wednesday 5/2/18 ~ 4 hours
+		Was given a tour through the structure of the application's code
+			Learned an overview of the way that the application works
+		Researched the model, view, controller programming paradigm
+		Was given access to the github repository that holds the application's code
+	Thursday 5/3/18 ~ 4 hours
+		Ben created a branch of the github repository for me to work on
+			Fetched the repository and put it in my development folder
+		Set up my development environment so that i can run my code on the server
+	Friday 5/4/18 ~ 5 hours
+		Created a ruby file that will be used to interact with the wit.ai API
+			Connected to the API
+			Experimented with things that both ruby and the API can do together
+			Learned about modules and classes and how they can be called via putty
+		Trained a test application on wit.ai based off an example from their Github repository
+			Wrote ruby code to use the test application

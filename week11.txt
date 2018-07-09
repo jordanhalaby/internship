@@ -1,0 +1,10 @@
+Week 11 7/9/18 - 7/13/18
+	Monday 7/9/18
+		Started typing up the code for a decision tree in Java in order to get familiarized with the algorithm
+		Took notes on things that will be important to remember when converting the Java code to Ruby
+			There is an excessive use of ArrayLists which will be difficult to keep track of
+			There are two inner classes that need to be defined
+				Each with a plethora of private variables
+			There are methods that return objects and arrays/arraylists instead of variables
+			Many nested methods/functions that span throughout the whole algorithm
+			Some arrays/arraylists need to be reset at certain points of the algorithm

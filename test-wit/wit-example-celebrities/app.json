@@ -1,0 +1,9 @@
+{
+  "version" : 20160513,
+  "zip-command" : "zip wit-example-celebrities.zip wit-example-celebrities/app.json wit-example-celebrities/entities/*.json wit-example-celebrities/actions.json wit-example-celebrities/stories.json wit-example-celebrities/expressions.json",
+  "data" : {
+    "name" : "wit-example-celebrities",
+    "description" : "",
+    "lang" : "en"
+  }
+}

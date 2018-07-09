@@ -1,0 +1,30 @@
+{
+  "data" : {
+    "lookups" : [
+      "free-text",
+      "keywords"
+    ],
+    "name" : "category",
+    "lang" : "en",
+    "exotic" : false,
+    "id" : "category",
+    "values" : [
+      {
+        "value" : "chuck",
+        "expressions" : [
+          "chuck",
+          "chuck norris"
+        ]
+      },
+      {
+        "value" : "tech",
+        "expressions" : [
+          "tech",
+          "technology"
+        ]
+      }
+    ],
+    "doc" : "User-defined entity",
+    "builtin" : false
+  }
+}

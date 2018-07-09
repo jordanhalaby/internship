@@ -1,0 +1,9 @@
+{
+  "version" : 20160513,
+  "zip-command" : "zip wit-example-joke-bot.zip wit-example-joke-bot/app.json wit-example-joke-bot/entities/*.json wit-example-joke-bot/actions.json wit-example-joke-bot/stories.json wit-example-joke-bot/expressions.json",
+  "data" : {
+    "name" : "wit-example-joke-bot",
+    "description" : "wit.ai app for tests",
+    "lang" : "en"
+  }
+}

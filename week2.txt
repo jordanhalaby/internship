@@ -1,0 +1,45 @@
+Week 2 5/7/18 - 5/11/18
+	Monday 5/7/18 ~ 2 hours
+		Made small adjustments to my test application
+			Put in a method stub to get user name and option to save invalid entries
+		Attempted to train the bot to tell what day/time that it currently is
+			Wit comes with built-in entities for things like datetime, greetings, locations, etc
+	Tuesday 5/8/18 ~ 5 hours
+		Fixed an error in my test application
+			When getting a joke from the user whose topic was not defined in the joke categories
+			Wit was assuming that it was a category
+				Therefore my application was looking for a joke whose topic was not made into a joke
+				Fixed this by checking the list of jokes for the category that was entered
+		Gave Ben a demo of my progress thus far
+			Told me that I am on the right track
+			He gave explained what I should attempt with my test application
+		Added new features to the test application	
+			Making sure that after the user says 'hello', the system remembers them
+			Making sure that they user doesn't respond to a joke before it has been told
+			Added a variable that tells which application is running.
+				In this case, jokebot
+	Wednesday 5/9/18 ~ 4 hours
+		Spent far too much time installing mongodb on my virtual machine
+			Kept getting an "connection refused" error
+			Solved by editing the mongodb.conf file
+		Learned about NoSQL having no prior knowledge
+			Learned basic syntax
+	Thursday 5/10/18 ~ 6 hours
+		My development environment on my virtual machine got messed up
+			I was unable to SSH into the machine
+			After spending quite a long time with Ben, we realized that my host-only adapter was messed up
+			Eventually was able to SSH into my machine
+		I continued working on my test chat-bot
+			Implemented a new class called topics
+				Purpose of this was to keep track of which topics the user is talking about
+					Useful for real chat-bot because we need to know which form/field the user is talking about
+			Ran out of space on my virtual machine
+				Spent time trying to determine which folders to remove in order to save my code
+	Friday 5/11/18 ~ 3 hours
+		Did more work on the topic chat-bot and came up with goals for next week
+		My plan for next week is to connect to a Mongo database
+			For chat responses that don't match with my given intent
+				I am going to implement a save feature to write that response to the database
+				I am also going to create a user interface for saving responses to the Wit API
+			Talked to Ben about these plans and was told that it will be quite a process to do so
+		Tested my virtual machine to make sure that it was correctly configured after yesterday's chaos

@@ -1,0 +1,90 @@
+Week 8 6/18/18 - 6/22/18
+	Monday 6/18/18
+		Talked to Jessica about potential questions and problems that users of our system run into frequently
+			She said that the biggest problems have to do with the I9 form and its related forms
+				I9 Supporting Documents
+					Useres don't know to upload the front and back of their documents
+						These include their drivers license, SS card, and birth certificate
+				I9 Authorized Representative Information
+					The Agent Representative Information section asks for a user to input a representative
+						Their name, valid e-mail address, and must be over 18 years old
+			There are also miscellaneous problems that users run into
+				Direct Deposit Documentation
+					Must be a typed letter from the bank
+						This is because a written letter may be read falsely and has potential for linking to the wrong bank account
+				Withholdings forms
+					User may work in one state and live in another
+			Questions that users run into
+				How to sign/save a signature
+				How to view/print a PDF
+				How to do things regarding Fieldglass
+					Fieldglass User Guide
+			Whether they are using Internet Explorer in contrast to Chrome/Firefox
+		Wrote down my plan for the rest of the week
+			Going to continue interviewing people about their common problems
+			Mess around with the training data on my Java implementation of the neural network
+			Comment my code so that I can see what is going on with more clarity and without reading the code itself
+			*Find the range of an output value to map it to a real response
+			Add code to automatically create the database and a collection if they don't exist
+	Tuesday 6/19/18
+		Talked with Candace, who is our Independent Contractor specialist, mostly about her view of common questions
+			For the E-Verify Self Check Instructions, there are 2 frequently asked questions
+				Why does it need to be done
+					Per company policy, checks to see if the individual is eligible to work in the United States
+				Where do I upload
+					The Self Check Results item
+			For the Self Check Results, people often ask what to upload
+				A picture of the green checkmark that confirms the work authorization
+			For the Electronic Fund Transfer Authorization
+				We want to ask the user if they are interested in receiving direct deposit
+					If so, we want them to click the "New EFT Account" box
+			For the certificate of insurance, people often ask who the certificate holder should be
+				The answer is the name of our company, Commoneo, and our address
+			For the Business Director Listing, users often say that they don't advertise in Yellowpages
+				We should give examples such as Facebook, LinkedIn, etc
+			For the IC customer list, people often ask why they need to fill it out
+				This list helps to substantiate the IC's validity as an IC in the case of an IRS audit
+			The equipment list has 3 frequently asked questions
+				Why do you need this? should be answered by "It helps differentiate your status as an IC as opposed to a W2"
+				What do you need here? should be a listing of any equipment that you bring with you on-site during a project
+				I don't have any equipment? should be answered by "is there anything that you take on-site"
+		After talking to Candace, I talked to Lynette, who is another one of our workers who deal with W2 workers being onboarded
+			She brought to my attention a client specific form called "HPE Assignment Checklist"
+				For the following question on the form: Has the contractor beeen an HP/HPE employee within the past 12 months
+					The worker should only answer 'yes' if they were a W2 worker during that time
+				Conversely: Has the contractor previously worked at HP/HPE as a contractor
+					This only applies if they were an IC at that time
+			For the JPMC EJC Application Instructions there are 3 common questions
+				"What is the code?" (Referring to the code to get into the application)
+					JPMCCW (Highlighted in red on the item)
+				"How do i log back in?"
+					Go to applicationstation.com, and use your previosu username and password
+				"How do i get the verification of the completed application
+					Log in, and go to the link to view your completed application
+			She also brought up a good idea of drawing attention to the field that we are talking
+				I will have to talk with Ben about possibilities for this
+	Wednesday 6/20/18
+		Talked to Brittani, who is the general W2 onboarding consultant
+			She told me that for the I9 Authorized Representative Information form, people commonly ask if they can use themselves
+				The answer to that is no, also the instruction verbage is weird
+			For the Hourly Consultant Benefits Waiver, people ask exactly what they are waiving
+				This is basically saying that any benefit that you are eligible for come from VSG and not from the client
+			For the Sick Leave Notice item, in order to tell if people get benefits, they need to scroll down to their state on the item
+			For the I9 Form itself, a common question is why they can't fill out the 2nd page
+				That is for the employer to fill out
+			She was very adament that people don't read instructions to the full extent required
+		As a group, we decided that if the chat-bot fails to help the user, they will be redirected to the general HR number
+		I continued working on my Java implementation of the neural network
+			Commented my code so that I can easily understand what is going on when i begin converting it to Ruby
+			Started playing around with the training file 
+				Learned that I can only use values between 0 and 1 for this specific algorithm
+					So all codes will have to be converted to a decimal and then converted back to an integer later
+	Thursday 6/21/18
+		Since this chat-bot will be deployed on the development server before being transfered to the production server,
+			I found it necessary to create a few commands in Ruby that will automatically create the database and collection(s) that are necessary
+			This was done by simply creating a mongo connection with the new database name declared, and creating a collection with the	
+				create_collection command
+			This will allow for a smooth transitioning from the development server to the production server
+		Changed the method that saves user input so that not only does it store the input in the database, 
+			but it also saves the name of the form
+			Changed the debugger method so that it spits out the input and the form name

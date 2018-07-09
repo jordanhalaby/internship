@@ -1,0 +1,16 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    java (0.0.2)
+    wit (6.0.0)
+
+PLATFORMS
+  java
+  ruby
+
+DEPENDENCIES
+  java
+  wit
+
+BUNDLED WITH
+   1.16.2
