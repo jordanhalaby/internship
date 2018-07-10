@@ -8,3 +8,52 @@ Week 11 7/9/18 - 7/13/18
 			There are methods that return objects and arrays/arraylists instead of variables
 			Many nested methods/functions that span throughout the whole algorithm
 			Some arrays/arraylists need to be reset at certain points of the algorithm
+		Started working on the Ruby implementation of the Decision Tree
+			Created a class called Decision and two inner classes called Record and Node
+				For Record, I needed to define class variables and a constructor that sets the variables to the parameters
+				For Node, I needed to define class objects of the Node class. Also, i had to create a constructor which
+					determines the node type
+					It took a while to figure out how to make objects of the Node class inside the Node class
+						it's not as straight forward as Java
+			Create a constructor for the Decision class that initialize the class variables and arrays/arraylists
+				This function will be used to start the process of classifying the records, including obtaining the training data
+			Using some of the code that I had built for the Neural Network, I was able to put together a method to obtain the 
+				training data. Instead of creating an array of inputs and an array of outputs, i created an array of attributes, found the 
+				associated className, and pushed it to the records array. Then i took each of the attributes and pushed it to the attributes array
+				Finally, i created methods whose purpose was to test that the data was properly extracted from the training file
+			During my creation of the Neural Network last week, i realized the my new object was returning a plethora of return values
+				This happened again on my Decision tree, so to fix this, i had to create an "inspect" method to return only the object that i created
+			Created a method called buildTree that calls the build function on the set of records and attributes
+			Created a method called sameClass that determines if all the records in the array have the same class
+				It does this by determining if each record has the same class name as the first record in the array
+				if any two records match, we return false, otherwise return true
+			Created a method called majorityClass that determines the node which has the majority class of records
+				This is basically sorting the array of class frequencies and returns the maxIndex which correlates to the majority class
+			Created a method called bestCondition which takes two arrays  (attributes and records) and calls the evaluate method
+				to determine the minIndex. Meaning that the weighted entropy of each of the conditions are calculated; then we choose the conditions
+				with the smallest weighted average class entropy
+			Created a method called evaluate which has the purpose of calculating the weighted average class entropy. This is done by taking arrays of
+				the left records and the right records then determining the entropy of each. We then normalize the left and right entropies, and finally find the average
+			Created a method called collect which returns an array that is created by bipartitioning the given set of records, the condition, and the values
+				then it loops through the number of records and determines if each record is equal to teh given value. If they match, the result gets added to the
+				returning array
+			Created a method called entropy that has the function of determining the Gini Entropy of a set of records
+			Created a method called copyAttributes that literally copies over the attributes from one record to another
+			Created a method called build which recursively builds the decision tree. Each iteration returns a Node object
+				It first checks to see if the records are of the same class	
+					If so, create a new leaf node with the classname of this class
+				It then checks if the given array of attributes are empty
+					If so, create a leaf node with the classname of the majority class
+				If all else is false, 
+					we find the best condition
+					We collect the left and right records
+					We then check to see if either of these collections are empty	
+						If so, create a leaf node with the classname of the majority class
+					Otherwise
+						We copy the attributes to left and right arrays
+						Using these attribute arrays, we remove the condition from each of these attribute arrays
+						We then recursively call build on the left and right records separately to create left and right nodes
+						Finally, we create an internal node with teh condition as the class, and the left and right noddes
+			Created a method called classify that will be used in conjunction with the testfile
+				It takes an array of input attributes and traverses the tree until the node type is no longer internal
+					During each iteration, the algorithm decides if it should traverse the tree to the right or left based on a condition
