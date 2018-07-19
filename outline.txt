@@ -1,0 +1,125 @@
+
+
+*Type*
+Question
+	*question-type*
+	Where
+	Can
+		*Can-questions*
+		provide
+			*provide-object*
+			typed letter
+			written letter
+			letter
+	Who
+		*Who-questions*
+		fills
+		acts
+			*acts-object*
+			certificate holder
+	When
+	Should
+	Why
+		*Why-questions*
+		can't fill
+		form in queue
+		necessary
+			*Need-object*
+			upload
+			fill
+		click
+			*click-object*
+			Cancel EFT
+			New EFT Account
+		in queue
+		provide
+			*provide-object*
+			typed letter
+			written letter
+			letter
+	Do
+		*Do-questions*
+		provide
+			*provide-object*
+			typed letter
+			written letter
+			letter
+	Which
+		*Which-questions*
+		side
+	What
+		*What-questions*
+		purpose
+		required
+		upload
+			*Need-object*
+			upload
+			fill
+		options
+		mean
+			*mean-object*
+			coverage
+			*Waive-object*
+			Benefits
+				*coverage-action*
+				waive
+				accept
+			Coverage
+				*coverage-action*
+				waive
+				accept
+		not-posses
+			*posses-object*
+			equipment
+			information
+		code
+		result
+			*result-object*
+			advertise
+		action
+		waived
+			*Waive-object*
+			Benefits
+				*coverage-action*
+				waive
+				accept
+			Coverage
+				*coverage-action*
+				waive
+				accept
+		fill
+			*fill-object*
+			supporting document
+			page
+			form
+			employment gap
+			it
+			*location-india*
+			true
+			false
+	Does
+		*Does-questions*
+		related
+			*Related-object*
+			myself
+			someone
+			representative
+	How
+		*How-questions*
+		logon
+		years
+		obtain
+			*Obtain-object*
+			Direct Deposit
+		age
+		know
+			*know-object*
+			eligible
+			sick leave benefits
+		navigate
+			*navigate-to*
+			application
+			completed application
+	
+Statement
+Problem

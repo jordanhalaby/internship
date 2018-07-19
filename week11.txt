@@ -8,6 +8,7 @@ Week 11 7/9/18 - 7/13/18
 			There are methods that return objects and arrays/arraylists instead of variables
 			Many nested methods/functions that span throughout the whole algorithm
 			Some arrays/arraylists need to be reset at certain points of the algorithm
+	Tuesday 7/10/18
 		Started working on the Ruby implementation of the Decision Tree
 			Created a class called Decision and two inner classes called Record and Node
 				For Record, I needed to define class variables and a constructor that sets the variables to the parameters
@@ -21,6 +22,7 @@ Week 11 7/9/18 - 7/13/18
 				training data. Instead of creating an array of inputs and an array of outputs, i created an array of attributes, found the 
 				associated className, and pushed it to the records array. Then i took each of the attributes and pushed it to the attributes array
 				Finally, i created methods whose purpose was to test that the data was properly extracted from the training file
+	Wednesday 7/11/18
 			During my creation of the Neural Network last week, i realized the my new object was returning a plethora of return values
 				This happened again on my Decision tree, so to fix this, i had to create an "inspect" method to return only the object that i created
 			Created a method called buildTree that calls the build function on the set of records and attributes
@@ -39,6 +41,7 @@ Week 11 7/9/18 - 7/13/18
 				returning array
 			Created a method called entropy that has the function of determining the Gini Entropy of a set of records
 			Created a method called copyAttributes that literally copies over the attributes from one record to another
+	Thursday 7/12/18
 			Created a method called build which recursively builds the decision tree. Each iteration returns a Node object
 				It first checks to see if the records are of the same class	
 					If so, create a new leaf node with the classname of this class
