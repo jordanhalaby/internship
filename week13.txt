@@ -1,0 +1,61 @@
+Week 13 7/23/18 - 7/27/18
+	Monday 7/23/18
+		Now that i know how my training/test data will behave as binary numbers that represent various options that are
+		defined by running user input through the Wit API, the goal for the week is to create the actual training data. The
+		past few weeks have been spent by formulating my strategy to do this. 
+		The way my training data will be structured is of the following type:
+			Form Type QuestionType QuestionContent QuestionObject CoverageAction LocationIndia ActionVerb NavigateTo
+			Each of these have a different number of on/off switches
+		Since I had 30 entites, each with a large amount of traits/keywords, I decided to compact them according to the type of entity that they
+		represent. In this way, I will be able to save the amount of training attributes that i create by grouping them together.
+		Now that i have a way of representing each of the training questions with binary attributes, I will begin converting them to actual
+		training data
+		The problem that I am now facing is that recording each of these binary attributes is extremely tedious and is taking a long time just
+		to get through the first few of them.
+			So, I came up with a solution that I will use our form developer technology to create a list of input fields that will allow me
+			to create training data on the fly. This form will function like a simple HTML form with input fields and a submit button
+			that will convert the entered information into training data that matches my pre-designed structure
+				I will create these input fields, and formulate the training data line by determining the number in each of the input fields
+			To begin with this, I need to assign a number to each of the possible entity keywords/traits. Each of these numbers will be converted
+				into binary and then converted into the on/off switches that i mentioned earlier
+				Then I will type these into each of the input fields and convert that number to a series of binary switches
+	Tuesday 7/24/18
+		So to create my form that will convert numbers into a binary number, and from there into a binary set of attributes I began by creating all the input
+		fields that will be entered on. Then I created labels next to each of the input fields so that I can keep track of what each of the fields is asking
+		for. Then i created a new set of fields that will calculate the binary number for each of the inputed values. Then i created another set of input
+		fields that have the purpose of displaying the name of the entities trait/keywords
+		I then created an array of hashes (hashes in Ruby are essentially the equivalent of dictionaries in python; they are basically an associatvie array)
+		that contain the keyword/trait name and the binary representation of the number supplied. I then created a method that will grab this array of hashes
+		and populated the input fields that i just created
+			I did this with the form name first so that i could figure out how i am going to do it
+			With success, i decided to continue going through the rest of the fields. It is important to note that if nothing is entered into the
+			input field, the other associated fields are populated with the contents of the 0th index of the array of hashes
+			I repeated this process for the rest of my groups of entities. With each one, I had to match up the number that I had originally assigned
+			to each keyword/trait and have that be exactly similar to the index of the array that was applicable for any given group of entites
+			After having converted each entered number into a binary string, I split this string into an array of single characters,
+			either 0 or 1 and looped through each to make a string of on/off switches
+			Finally, I created an input field that will allow me to choose the classification of the training input
+	Wednesday 7/25/18
+		I edited the decision tree algorithm so that it will allow for the types of switches/flags that will be passed through to it
+		In addition to modifying the attribute name conversion (done by checking if the given attribute contains "_on" or "_off") and modifying
+		the class name conversion, I had to modify certain lines of the decision tree algorithm so that I could allow for the number of attributes
+		and class names that I had to hard-code during my original attempt at creating the algorithm
+			I ran my decision tree on a few of some fake training data formulated from my training data generator just to see if it would work
+			properly
+	Thursday 7/26/18
+		Today I finally used my form that was developed for the purpose of creating training data to do just that.
+		Armed with two external monitors hooked up to my laptop, I began the very tedious and lengthy process of converting my
+		training questions into actual training data that the decision tree algorithm will recognize. This part of my project
+		would have been very overwhelming had I not prepared for it in the way i did. 
+		The process that I took is as follows:
+			I took a training question from my question bank and plugged it into the Wit user interface
+			At that point, Wit converted my questions into the proper entities and keywords/traits
+			From there, I used the form that i had created to plug in each of the generated enitites
+			I then chose the response code and the code for the form that the question relates to
+			The form that I created converted my selections into applicable training data, which i added to a text document
+		There were some issues that I encountered.
+			I sometimes forgot to change the code for the name of the form that the question applies to
+			I sometimes forgot to change the code that represents the class name for the decision tree
+			Sometimes Wit would return multiple options for any given entity. I had to determine which was more applicable 
+				to the specs of my chat-bot
+			I was hasty at the beginning and forgot to enter everything that the Wit API returned to me

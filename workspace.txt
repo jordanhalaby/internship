@@ -1,0 +1,144 @@
+[
+Hash["binary" => "00000", "frm"=>"Other Form"],
+Hash["binary" => "00001", "frm"=>"Employment History Form"],
+Hash["binary" => "00010", "frm"=>"Scan of Diploma"],
+Hash["binary" => "00011", "frm"=>"I9 Supporting Documents"],
+Hash["binary" => "00100", "frm"=>"I9 Authorized Representative Form"],
+Hash["binary" => "00101", "frm"=>"Direct Deposit Documentation"],
+Hash["binary" => "00110", "frm"=>"Fieldglass User Guide"],
+Hash["binary" => "00111", "frm"=>"Withholdings Form"],
+Hash["binary" => "01000", "frm"=>"E-Verify Self Check Instructions"],
+Hash["binary" => "01001", "frm"=>"Self Check Results"],
+Hash["binary" => "01010", "frm"=>"Electronic Fund Transfer Authorization"],
+Hash["binary" => "01011", "frm"=>"Certificate of Insurance"],
+Hash["binary" => "01100", "frm"=>"Business Director Listing"],
+Hash["binary" => "01101", "frm"=>"Customer List"],
+Hash["binary" => "01110", "frm"=>"Equipment List"],
+Hash["binary" => "01111", "frm"=>"JPMC EJC Appplication Instructions"],
+Hash["binary" => "10000", "frm"=>"Hourly Consultant Benefits Waiver"],
+Hash["binary" => "10001", "frm"=>"Employment Application"],
+Hash["binary" => "10010", "frm"=>"Sick Leave Notice"],
+Hash["binary" => "10011", "frm"=>"I9 Form"],
+Hash["binary" => "10100", "frm"=>"ACA Benefits Election"]
+]
+
+[
+Hash["binary" => "0", "type" => "Question"],
+Hash["binary" => "1", "type" => "Problem"]
+]
+
+[
+Hash["binary" => "0000", "qtype" => "NA"],
+Hash["binary" => "0001", "qtype" => "Where"],
+Hash["binary" => "0010", "qtype" => "Does"],
+Hash["binary" => "0011", "qtype" => "Can"],
+Hash["binary" => "0100", "qtype" => "Who"],
+Hash["binary" => "0101", "qtype" => "When"],
+Hash["binary" => "0110", "qtype" => "Should"],
+Hash["binary" => "0111", "qtype" => "Why"],
+Hash["binary" => "1000", "qtype" => "Which"],
+Hash["binary" => "1001", "qtype" => "What"],
+Hash["binary" => "1010", "qtype" => "How"]
+]
+
+[
+Hash["binary" => "00000", "qcontent" => "N/A"],
+Hash["binary" => "00001", "qcontent" => "Can't Fill"],
+Hash["binary" => "00010", "qcontent" => "Form in Queue"],
+Hash["binary" => "00011", "qcontent" => "Necessary"],
+Hash["binary" => "00100", "qcontent" => "Click"],
+Hash["binary" => "00101", "qcontent" => "In Queue"],
+Hash["binary" => "00110", "qcontent" => "Provide"],
+Hash["binary" => "00111", "qcontent" => "Side"],
+Hash["binary" => "01000", "qcontent" => "Provide"],
+Hash["binary" => "01001", "qcontent" => "Purpose"],
+Hash["binary" => "01010", "qcontent" => "Required"],
+Hash["binary" => "01011", "qcontent" => "Upload"],
+Hash["binary" => "01100", "qcontent" => "Options"],
+Hash["binary" => "01101", "qcontent" => "Mean"],
+Hash["binary" => "01110", "qcontent" => "Not-Posses"],
+Hash["binary" => "01111", "qcontent" => "Code"],
+Hash["binary" => "10000", "qcontent" => "Result"],
+Hash["binary" => "10001", "qcontent" => "Action"],
+Hash["binary" => "10010", "qcontent" => "Waived"],
+Hash["binary" => "10011", "qcontent" => "Fill"],
+Hash["binary" => "10100", "qcontent" => "Related"],
+Hash["binary" => "10101", "qcontent" => "Logon"],
+Hash["binary" => "10110", "qcontent" => "Years"],
+Hash["binary" => "10111", "qcontent" => "Obtain"],
+Hash["binary" => "11000", "qcontent" => "Age"],
+Hash["binary" => "11001", "qcontent" => "Know"],
+Hash["binary" => "11010", "qcontent" => "Navigate"],
+Hash["binary" => "11011", "qcontent" => "Fill"],
+Hash["binary" => "11100", "qcontent" => "Acts"]
+]
+
+[
+Hash["binary" => "00000", "object" => "N/A"],
+Hash["binary" => "00001", "object" => "Direct Deposit"],
+Hash["binary" => "00010", "object" => "Benefits"],
+Hash["binary" => "00011", "object" => "Coverage"],
+Hash["binary" => "00100", "object" => "Upload"],
+Hash["binary" => "00101", "object" => "Fill"],
+Hash["binary" => "00110", "object" => "Information"],
+Hash["binary" => "00111", "object" => "Equipment"],
+Hash["binary" => "01000", "object" => "Certificate Holder"],
+Hash["binary" => "01001", "object" => "Cancel EFT"],
+Hash["binary" => "01010", "object" => "New EFT Account"],
+Hash["binary" => "01011", "object" => "Advertise"],
+Hash["binary" => "01100", "object" => "Eligible"],
+Hash["binary" => "01101", "object" => "Sick Leaave Benefits"],
+Hash["binary" => "01110", "object" => "Supporting Document"],
+Hash["binary" => "01111", "object" => "Page"],
+Hash["binary" => "10000", "object" => "Form"],
+Hash["binary" => "10001", "object" => "Employment Gap"],
+Hash["binary" => "10010", "object" => "It"],
+Hash["binary" => "10011", "object" => "Myself"],
+Hash["binary" => "10100", "object" => "Someone"],
+Hash["binary" => "10101", "object" => "Representative"],
+Hash["binary" => "10110", "object" => "Coverage"],
+Hash["binary" => "10111", "object" => "Typed Letter"],
+Hash["binary" => "11000", "object" => "Written Letter"],
+Hash["binary" => "11001", "object" => "Letter"]
+]
+
+[
+Hash["binary" => "00", "coverage" => "N/A"],
+Hash["binary" => "01", "coverage" => "Waive"],
+Hash["binary" => "10", "coverage" => "Accept"]
+]
+
+[
+Hash["binary" => "00", "india" => "N/A"],
+Hash["binary" => "01", "india" => "true"],
+Hash["binary" => "10", "india" => "false"]
+]
+
+[
+Hash["binary" => "0", "action" => "N/A"],
+Hash["binary" => "1", "action" => "Waive"]
+]
+
+[
+Hash["binary" => "00", "navigate" => "N/A"],
+Hash["binary" => "01", "navigate" => "Application"],
+Hash["binary" => "10", "navigate" => "Completed Application"]
+]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

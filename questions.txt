@@ -11,6 +11,7 @@ Scan of Diploma
 	I am from India
 		You must provide final year marksheet and degree copy
 	I am from the united states
+		You must provide a copy of your degree
 	What do i put if i am from India?
 		You must provide final year marksheet and degree copy
 	What do i put if i am not from India?
@@ -133,9 +134,6 @@ Employment Application
 Sick Leave Notice
 	How do i know if i get sick leave benefits?
 		Scroll through this item and if your location is on it, you get benefits
-I9 Form
-	Why can't i fill out the second page?
-		The employer will fill out the second page
 ACA Benefits Election
 	What does accepting coverage mean?
 		Accepting coverage doesn't necessarily mean you are enrolled

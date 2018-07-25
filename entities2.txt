@@ -1,0 +1,109 @@
+Form Name		20
+				
+type			2
+				
+question-type
+	where	1
+	does	2
+	can		3
+	who		4
+	when	5
+	should	6
+	why		7
+	which	8
+	what	9
+	how		10
+				
+why-questions
+	can't fill 		1
+	form in queuee	2
+	necessary		3
+	click			4
+	in queuee		5
+	provide			6
+which-questions	
+	side			7
+can-questions	
+	provide			8
+what-questions
+	purpose			9
+	required		10
+	upload			11
+	options			12
+	mean			13
+	not-posses		14
+	code			15
+	result			16
+	action			17
+	waived			18
+	fill			19
+does-questions
+	related			20
+how-questions
+	logon			21
+	years			22
+	obtain			23
+	age				24
+	know			25
+	navigate		26
+who-questions
+	fill			27
+	acts			28
+				
+obtain-object	
+	direct deposit	1
+waive-object	
+	benefits		2
+	coverage		3
+need-object		
+	upload			4
+	fill			5
+posses-object	
+	information		6
+	equipment		7
+acts-object		
+	certificate holder	8
+click-object	
+	Cancel EFT		9
+	New EFT Account	10
+result-object	
+	advertise		11
+know-object		
+	eligible		12
+	sick leave benefits	13
+fill-object		
+	supporting document	14
+	page			15
+	form			16
+	employment gap	17
+	it				18
+related-object	
+	myself			19
+	someone			20
+	representative	21
+mean-object		
+	coverage		22
+provide-object	
+	typed letter	23
+	written letter	24
+	letter			25
+				
+				
+coverage-action	
+	waive			1
+	accept			2
+				
+				
+location-india	
+	true			1
+	false			2
+				
+				
+action-verb		
+	waive			1
+				
+
+navigate-to		
+	application				1
+	completed application	2
+				
