@@ -1,0 +1,52 @@
+Week 14 7/30/18 - 8/3/18
+	Monday 7/30/18
+		Using the outline that i had created a few weeks ago, I started going through each of the entities and their keywords/traits
+		in an attempt to find the keywords/traits that appear to be more pertient than other keywords/traits. I did this because some training
+		questions contain information pertaining to more than one keyword/trait for any given entity. For example, the following trianing
+		qustion: "What should I upload?" The question type will return both 'what' and 'should'. But since 'what' is more pertinent than the
+		keyword 'should'. 
+			The order that i arranged the question-type keywords is as follows:
+				'what', 'how', 'why', 'which', 'who', 'when', 'where', 'does', 'should', 'can'
+		I will use this outline to convert a captured user input and traverse the outline to determine what the test data will be represented by
+		a series of on/off switches (similar to how i created the training data)
+		I went through each of the entities that I had created in my Wit user interface to get the first entity value from a user's input
+			This was done by calling a method called first_entity_value
+				This method takes the entered user input (converted to a hash of entities) and a pre-designated entity name
+				It returns nil if the entity hash doesn't have a key to it
+				Then it assigns the entities first value to a variable
+					The first entity value will correlate with the keyword/trait that has the highest probability
+				It returns nil if this variable is, itself, nil
+				It finally returns the type of keyword/trait that corresponds best to the entered input
+			I ran into a couple problems while doing this	
+				First of all, Ruby doesn't allow variable names with a dash in them
+					It assumes you are trying to subtract two separate variables
+				Next, although each of my entities in Wit are named with a dash, the Wit API only accepts entity value names
+					that contain an underscore in place of the dash.
+				Lastly, since the format of my expected user input is of the form: 4||message it was taking '4' to be a keyword/trait
+					I had to modify the first_entity_value method to accept the first index of the array instead of the zeroth index
+						for the question-type entity
+	Tuesday 7/31/18
+		After obtaining the entity value with the first_entity_value function, I started working on my Ruby script that will
+		convert the entity value (for a specific entity) into a decimal number. I will take this decimal number and the name of the 
+		entity and convert it into a binary string, much like i did when I was creating my form to generate the training data
+		So i created a method that takes the decimal number and the entity group name (such as question_type) that returned a binary string
+		back to me
+			Inside this method, I created an array of hashes for each of the entity groups. Each hash in this array contains a key called "binary"
+			that corresponds to the binary equivalent of the decimal number given in the parameter.
+			For each entity group, I passed the decimal number (which acts as an index) and the key "binary" to obtain the string of 1's and 0's
+		Next i had to find the index of the form name and convert that into a series of 1's and 0's just like i had done with the entity groups
+			Converted the index into another string of 1's and 0's
+		Finally, I concatenated all entity group binary strings and the form name binary string into a long series of 1's and 0's
+	Wednesday 8/1/18
+		I took my series of 1's and 0's, that I obtained from Tuesday's progress, and split it into an array of 1's and 0's which represent
+		the on/off switches in my training data
+		In my chat.rb file (the file containing all code for the chat-bot), I created a new object of the Decision class so that I could pass
+		this array of test data into it
+			To do this, i needed to modify my decision tree algorithm so that instead of everything happening in the constructor, only the 
+			training data was obtained and the tree was built. In another method, to which the array is a parameter, I called the classify 
+			function on said parameter, and it was meant to return the number corresponding to the classification
+			I ran into an issue where the decision tree was interpreting my passed array as an array of strings instead of integers
+				I had to go back to my Chat class and run an each on the array and convert it to an integer, and then push the new integer value
+				onto a new array
+		After extensively testing that my decision tree returned the correct classification value for several of my training questions,
+		I was content with how I set up my training/test data, my decision tree algorithm, and most importantly my Chat class

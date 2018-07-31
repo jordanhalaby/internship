@@ -13,7 +13,19 @@ question-type
 	which	8
 	what	9
 	how		10
-				
+
+question-type
+	what 9
+	how 10
+	why 7
+	which 8
+	who 4
+	when 5
+	where 1
+	does 2
+	should 6
+	can 3
+	
 why-questions
 	can't fill 		1
 	form in queuee	2
